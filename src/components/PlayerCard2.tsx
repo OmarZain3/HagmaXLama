@@ -30,7 +30,7 @@ export default function PlayerCard2({
   onCaptain,
   selected,
   disabled,
-  actionLabel,
+  // actionLabel,
 }: PlayerCard2Props) {
   return (
     <div
