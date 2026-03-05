@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_API_URL": "@vercel_api_url"
+  },
+  "functions": {
+    "api/proxy.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}

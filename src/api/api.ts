@@ -5,9 +5,10 @@
 
 import type { ApiResponse } from '@/types';
 
-// Use dev-server proxy to avoid browser CORS issues with Apps Script.
-// In dev: Vite proxies /api -> VITE_API_URL.
-const API_BASE = '/api';
+// API endpoint configuration
+// In dev: Vite proxies /api -> VITE_API_URL
+// In prod (Vercel): Use serverless function /api/proxy
+const API_BASE = import.meta.env.MODE === 'production' ? '/api/proxy' : '/api';
 
 async function post<T>(body: Record<string, unknown>): Promise<ApiResponse<T>> {
   try {
