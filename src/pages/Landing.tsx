@@ -26,9 +26,9 @@ export function Landing() {
       </h1>
       <p className="mb-8 text-center text-[#EECC4E] text-lg">Fantasy Football</p>
       <div className="flex w-full max-w-xs flex-col gap-4">
-        <Button fullWidth variant="primary" onClick={enterDemo}>
+        {/* <Button fullWidth variant="primary" onClick={enterDemo}>
           Try demo – see all pages
-        </Button>
+        </Button> */}
         <Link to="/login">
           <Button fullWidth variant="secondary">
             Log in
