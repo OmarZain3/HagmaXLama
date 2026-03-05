@@ -1,5 +1,5 @@
 import type { Player } from '@/types';
-import teamLogo from "@/assets/Asset 6.png";
+import teamLogo from "@/public/Asset 6.png";
 
 /** Converts Google Drive share links to embeddable image URLs */
 function toImageUrl(url: string): string {
