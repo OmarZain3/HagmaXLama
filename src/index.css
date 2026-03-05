@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #083F5E;
+  --card-orange: #F79C22;
+  --primary-gold: #EECC4E;
+  --light-cream: #F8ECA7;
+  --danger-red: #A71F26;
+  --accent-sky: #99BFDE;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-blue);
+  min-height: 100vh;
+  color: #fff;
+  background-image: url('/pattern-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 63, 94, 0.85) 0%, rgba(8, 63, 94, 0.92) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .bg-brand-blue { background-color: #083F5E; }
+  .bg-brand-orange { background-color: #F79C22; }
+  .bg-brand-gold { background-color: #EECC4E; }
+  .bg-brand-cream { background-color: #F8ECA7; }
+  .text-brand-gold { color: #EECC4E; }
+  .text-brand-cream { color: #F8ECA7; }
+  .shadow-captain { box-shadow: 0 0 20px #EECC4E; }
+
+  .bg-pattern-1 {
+    background-image: url('/pattern-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .bg-pattern-2 {
+    background-image: url('/pattern-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .bg-pattern-overlay {
+    position: relative;
+  }
+  .bg-pattern-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 63, 94, 0.82) 0%, rgba(8, 63, 94, 0.9) 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .bg-pattern-overlay > * {
+    position: relative;
+    z-index: 1;
+  }
+}
