@@ -1,5 +1,6 @@
 import type { Player } from '@/types';
-import teamLogo from "@/public/Asset 6.png";
+// Default placeholder image
+const PLACEHOLDER_IMAGE = '/Asset 6.png';
 
 /** Converts Google Drive share links to embeddable image URLs */
 function toImageUrl(url: string): string {
@@ -51,7 +52,7 @@ export default function PlayerCard2({
         <>
           {/* HagmaXLama logo top-left */}
           <img
-            src={teamLogo}
+            src={PLACEHOLDER_IMAGE}
             alt="Asset 6"
             className="absolute top-1 left-1 w-4 h-4 sm:w-5 sm:h-5 pointer-events-none select-none"
           />

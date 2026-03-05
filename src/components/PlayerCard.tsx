@@ -33,7 +33,7 @@ export function PlayerCard({
       `}
     >
       <img
-        src="/public/Asset 6.png"
+        src="/Asset 6.png"
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute right-3 top-3 h-8 w-8 opacity-90"

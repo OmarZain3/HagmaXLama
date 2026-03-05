@@ -5,7 +5,7 @@ export function Landing() {
 
   return (
     <div className="bg-pattern-2 bg-pattern-overlay flex min-h-screen flex-col items-center justify-center px-4 font-poppins">
-      <img src="/public/Asset 6.png" alt="Hagma X Lamma Fantasy" className="mb-6 h-32 w-auto max-w-[280px] object-contain md:h-40" />
+      <img src="/Asset 6.png" alt="Hagma X Lamma Fantasy" className="mb-6 h-32 w-auto max-w-[280px] object-contain md:h-40" />
       <h1 className="mb-2 text-center text-4xl font-extrabold text-[#F8ECA7] md:text-5xl lg:text-6xl">
         Welcome to Hagma X Lamma Fantasy
       </h1>

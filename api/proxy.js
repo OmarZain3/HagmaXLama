@@ -5,7 +5,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const gasUrl = process.env.VITE_API_URL;
+    // Google Apps Script endpoint (URL is public in frontend code)
+    const gasUrl = 'https://script.google.com/macros/s/AKfycbwOlyq93KtHld_-weOshSue4D6_yPp5u7jzKSrjoiMqgEc2h6Oom0uVB1PwBKC37s0qXQ/exec';
     
     if (!gasUrl) {
       return res.status(500).json({ error: 'API URL not configured' });
